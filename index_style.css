@@ -1,0 +1,22 @@
+/* Image shape, border, position and size */
+#homepage-slika {
+    border-radius: 50%;
+    border: solid;
+    border-color: #a2836a;
+    border-width: 5px;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+/* Text on homepage */
+.tx{
+    font-size: 16px;
+}
+@media screen and (max-width: 767px) {
+    .tx{
+        font-size: 13px;
+    }
+}

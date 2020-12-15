@@ -1,0 +1,69 @@
+/* Background color of the whole page*/
+body {
+    background-color: #d9b08c;
+}
+/* Set background color, white text and some padding in footer*/
+footer {
+    background-color: #101010;
+    color: white;
+    padding: 15px;
+}
+/* Unvisited link */
+a:link, a:visited, a:active{
+    color: #ffffff;
+}
+/* Mouse over link */
+a:hover {
+    color: #a2836a;
+}
+img {
+    vertical-align: middle;
+    width: 100%;
+}
+
+/* From: https://www.w3schools.com/bootstrap/bootstrap_templates.asp for webpage
+/* Remove the navbar's default margin-bottom and rounded borders */
+.navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+}
+.nav-item.vertical{
+    font-weight: bold;
+}
+
+/* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+.row.content {
+    height: auto;
+}
+/* Set padding on top in main column*/
+.main{
+    padding-top: 15px;
+    padding-bottom: 30px;
+}
+
+/* Set background color, padding and 100% height in sidenavs */
+.sidenav {
+    padding-top: 20px;
+    background-color: #B89577;
+    height: 100vh;
+}
+/* On small screens, set height to 'auto' for sidenav and grid */
+@media screen and (max-width: 767px) {
+    .tx{
+        font-size: 12px;
+    }
+    .sidenav {
+        height: auto;
+        padding: 15px;
+    }
+}
+
+/* Color and width of Go to top button*/
+#myBtn {
+    color: #101010;
+    width: 100px;
+}
+/* Change the color od links for navigation inside a page */
+ul.nav li.nav-item.vertical a, ul.nav li.nav-item.vertical a:visited {
+    color: #101010 !important;
+}

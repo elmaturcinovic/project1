@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Blog</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="blog_style.css">
+
+    <!-- Favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/x-icon" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/x-icon" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+</head>
+<body>
+
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Elma Turčinović</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="index.html">Home</a></li>
+                        <li class="active"><a href="blog.html">Blog</a></li>
+                        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"> Gallery <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="gallery1.html">Sarajevo</a></li>
+                                <li><a href="gallery2.html">Bosnia and Herzegovina</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="projects.html">Projects</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container-fluid text-center">
+            <div class="row content">
+                <div class="col-sm-2 sidenav">
+                    <ul class="nav flex-column">
+                        <li class="nav-item vertical">
+                            <a class="nav-link active" href="#blog1">Evolution of Programming Languages</a>
+                        </li>
+                        <li class="nav-item vertical1">
+                            <a class="nav-link" href="#introduction">Introduction</a>
+                        </li>
+                        <li class="nav-item vertical1">
+                            <a class="nav-link" href="#first">First computers and beginning of programming</a>
+                        </li>
+                        <li class="nav-item vertical1">
+                            <a class="nav-link" href="#dev">Development of high-level languages</a>
+                        </li>
+                        <li class="nav-item vertical1">
+                            <a class="nav-link" href="#oop">Object-oriented programming</a>
+                        </li>
+                        <li class="nav-item vertical1">
+                            <a class="nav-link" href="#scripting">Scripting languages</a>
+                        </li>
+                        <li class="nav-item vertical">
+                            <a class="nav-link" href="#blog2">How to implement merge sort</a>
+                        </li>
+                        <li class="nav-item vertical1">
+                            <a class="nav-link" href="#what_is">What is merge sort?</a>
+                        </li>
+                        <li class="nav-item vertical1">
+                            <a class="nav-link" href="#algorithm">Algorithm</a>
+                        </li>
+                        <li class="nav-item vertical1">
+                            <a class="nav-link" href="#implementation">Implementation</a>
+                        </li>
+                        <li class="nav-item vertical1">
+                            <a class="nav-link" href="#complexity">Time complexity</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-8 main">
+                    <h1 id="blog1">Evolution of Programming Languages</h1>
+                    <br>
+                    <div class="col-sm-12 media">
+                        <img id="prog_lan" src="blog-pic1.jpeg" alt="Programming languages">
+                    </div>
+                    <br>
+                    <h4 id="introduction">Introduction</h4>
+                    <p class="tx">
+                        &emsp;Before we start analyzing different kinds of programming languages and history of their development
+                        we need to mention some basic stuff about programming languages in general. A programming language
+                        is a formal language that specifies a set of instructions that can be used to produce various kinds
+                        of output. Programming languages generally consist of instructions for a computer and can be used
+                        to create programs that implement specific algorithms. Its description is split into the two components,
+                        syntax or general rules or form of programming language and semantic which refers to the meaning of language
+                        constructs. Programming languages can be classified in many different ways. <br>
+                        Firstly we have three generations of programming languages, machine language, assembly languages (these two
+                        generations are also known as low-level programming languages) and third generation or high-level programming languages.
+                        High-level programming languages are classified into three categories based on their implementation methods.
+                        They can be compiled based (programs are translated into machine language), interpreter based (execute
+                        instructions directly, line by line) and there is also hybrid implementation (a compromise between compilers
+                        and pure interpreters). Then we have four high-level language categories which are based on programming
+                        methodologies. Imperative category that includes procedural programming languages (used to execute a
+                        sequence of statements which lead to a result), object-oriented programming languages (views the world
+                        as a group of objects that have internal data and external accessing parts of that data) and scripting
+                        programming languages (interpreter based, can be both procedural and it can support object-oriented
+                        programming). Functional programming languages treats computation as the evaluation of mathematical
+                        functions and avoids changing-state and mutable data. Logic programming languages let programmers make
+                        declarative statements and then allow the machine to reason about the consequences of those statements.
+                        Markup programming hybrid is a system for annotating a document in a way that is syntactically
+                        distinguishable from the text.
+                    </p>
+                    <br>
+                    <h4 id="first">First computers and beginning of programming</h4>
+                    <p class="tx">
+                        &emsp;The computers that became available in the late 1940s and early 1950s were far less usable
+                        than those of today. They were very slow, unreliable, expensive and they had extremely small memories.
+                        At the very beginning of computers were used only for military and scientific purposes. Programming
+                        was very hard because there were no high-level programming languages or even assembly languages, so
+                        programming was done in machine code which means that programmers had to write all instructions only
+                        with zero's and one's. That kind of programming is tedious and error prone, also code is very
+                        difficult to read. Another serious problem with machine language is absolute addressing, which makes
+                        program modification tedious and error prone. These are standard problems with all machine languages
+                        and were the primary motivations for inventing assemblers and assembly languages. In addition, most
+                        programming problems of that time were numerical and required floating-point arithmetic operations
+                        and indexing of some sort to allow the convenient use of arrays. Neither of these capabilities,
+                        however, was included in the architecture of the computers of the late 1940s and early 1950s.
+                        These deficiencies naturally led to the development of somewhat higher-level languages. Programming
+                        languages that were developed and used between the late 1940s and early 1950s were named pseudocodes and
+                        the most important of those Short Code and Speedcoding.<br>
+                        Short Code was the first one and it  was developed by John Mauchly in 1949 for the BINAC computer,
+                        which was one of the first successful stored-program electronic computers.Unlike machine code,
+                        Short Code statements represented mathematic expressions rather than a machine instruction, it
+                        was implemented with a pure interpreter.<br>
+                        The Speedcoding system developed by John Backus for the IBM 701 was the example of system that
+                        introduced floating-point operations. The system included pseudoinstructions for the four arithmetic
+                        operations on floating-point data, as well as operations such as square root, sine, arc tangent,
+                        exponent, and logarithm.<br>
+                        We should also mention that assembly languages, which are quite different from the pseudocodes
+                        discussed, evolved during the early 1950s.
+                    </p>
+                    <br>
+                    <div class="media">
+                        <video width=75% height=auto controls>
+                            <source src="Most%20Popular%20Programming%20Languages%201965%20-%202019.mp4" type="video/mp4">
+                        </video>
+                        <p>Timeline of the most popular programming languages since 1965 to 2019</p>
+                        <!--From: https://www.youtube.com/watch?v=Og847HVwRSI"-->
+                    </div>
+                    <br>
+                    <h4 id="dev">Development of high-level languages</h4>
+                    <h5>Fortran</h5>
+                    <p class="tx">
+                        As early as the mid-1950s, scientists began to create programming languages. And the first language
+                        of its kind was called Fortran and was developed in 1957. It is used to describe an algorithm for
+                        solving problems of the scientific and technical type using a digital computer. In addition, like
+                        the first computer units, a language of this kind was used to perform natural science and mathematical
+                        calculations. The overall success of Fortran is difficult to overstate: It dramatically changed the
+                        way computers are used. This is, of course, in large part due to its being the first widely used
+                        high-level language.This language in an improved type has been preserved to this day, and is one of the
+                        modern languages that have a high level and are mostly used in scientific research. The most common
+                        options today: Fortran-I2, Fortran-I4, EASIC Fortran and their generalizations.
+                    </p>
+                    <h5>LISP</h5>
+                    <p class="tx">
+                        In the fall of 1958, John McCarthy and Marvin Minsky formed the MIT AI Project where they developed the
+                        first list-processing language LISP. Pure LISP has only two kinds of data structures: atoms and lists.
+                        Internally, lists are stored as single-linked list structures, in which each node has two pointers and
+                        represents a list element. All computation in a purely functional program such as LISP is accomplished
+                        by applying functions to arguments. LISP completely dominated AI applications for a quarter century and
+                        it is still dominant in AI. Also two dialects of LISP are now widely used, Scheme and Common LISP.
+                        Scheme is well suited to educational applications, such as courses in functional programming and
+                        general introductions to programming. Common LISP was designed by combining the features of several
+                        dialects of LISP developed in the early 1980s, including Scheme, into a single language.
+                        Common LISP has a large number of data types and structures, including records, arrays, complex numbers,
+                        and character strings. It also has a form of packages for modularizing collections of functions and data
+                        providing access control.
+                    </p>
+                    <h5>BASIC</h5>
+                    <p class="tx">
+                        BASIC was originally designed at Dartmouth College  in New Hampshire by two mathematicians, John Kemeny
+                        and Thomas Kurtz. The goals of BASIC designers was to design language that is easy for nonscience students
+                        to learn and use, that is “pleasant and friendly”, that provide fast turnaround for homework, allow free and
+                        private access and consider user time more important than computer time.The most important aspect of the
+                        original BASIC was that it was the first widely used language that was used through terminals connected
+                        to a remote computer. Its current popular dialect is Visual Basic.
+                    </p>
+                    <h5 id="Pascal">Pascal</h5>
+                    <p class="tx">
+                        The largest impact of Pascal was on the teaching of programming. By the mid-1970s, Pascal had become the
+                        most widely used language for this purpose. This was quite natural, because Pascal was designed specifically
+                        for teaching programming. It is very small and simple language.
+                    </p>
+                    <h5 id="c">C</h5>
+                    <p class="tx">
+                        Like Pascal, C contributed little to the previously known collection of language features, but it has been
+                        widely used over a long period of time. Although originally designed for systems programming, C is well
+                        suited for a wide variety of applications. C’s ancestors include CPL, BCPL, B, and ALGOL 68. The C was
+                        designed and implemented by Dennis Ritchie at Bell Laboratories in 1972. A major reason for its great increase in
+                        popularity in the 1980s was that a compiler for it was part of the widely used UNIX operating system.
+                        Some people find it too insecure language because of its lack of complete type checking.
+                    </p>
+                    <br>
+                    <h4 id="oop"> Object-oriented languages</h4>
+                    <p class="tx">Smalltalk was the first programming language that fully supported objectoriented programming.
+                        The Smalltalk world is populated by nothing but objects, from integer constants to large complex software systems.
+                        All computing in Smalltalk is done by the same uniform technique: sending a message to an object to invoke one of
+                        its methods. A reply to a message is an object, which either returns the requested information or simply notifies
+                        the sender that the requested processing has been completed. In Smalltalk, object abstractions are classes.
+                        Instances of the class can be created and are then the objects of the program.
+                        Smalltalk hasalso done a great deal to promote two separate aspects of computing: graphical
+                        user interfaces and object-oriented programming.Today, the most significant software design methodologies and
+                        programming languages are object oriented.
+                    </p>
+                    <h5>C++</h5>
+                    <p class="tx">C++ has evolved from C through a sequence of modifications to improve its imperative features and to
+                        add constructs to support object-oriented programming. C++ was made by Bjarne Stroustrup at Bell Laboratories
+                        in 1980. The initial modifications to C included the addition of function parameter type checking and conversion
+                        and, more significantly, classes, which are related to those of SIMULA 67 and Smalltalk. Also included were
+                        derived classes, public/private access control of inherited components, constructor and destructor methods,
+                        and friend classes. During 1981, inline functions, default parameters, and overloading of the assignment
+                        operator were added. The second version of c++ was realised in in June 1989. in this version support for
+                        multiple inheritance and abstract classes, along with some other enhancements were added. Third version
+                        added templates, which provide parameterized types, and exception handling. C++ rapidly became and remains
+                        a widely used language. One factor in its popularity is the availability of good and inexpensive compilers.
+                        Another factor is that it is almost completely backward compatible with C. On the negative side, C++
+                        is a very large and complex language and also had inherited most of the insecurities of C.
+                    </p>
+                    <h5>Java</h5>
+                    <p class="tx">Java’s designers started with C++, removed some constructs, changed some, and added a few others.
+                        The resulting language provides much of the power and flexibility of C++, but in a smaller, simpler, and
+                        safer language. In 1990, Sun Microsystems determined there was a need for a programming language for
+                        embedded consumer electronic devices, such as toasters, microwave ovens, and interactive TV systems.
+                        Reliability was one of the primary goals for such a language and because they couldn't find that in
+                        already existing languages they decided to develop the new language that will be reliable,
+                        so Java was designed.
+                    </p>
+                    <br>
+                    <h4 id="scripting"> Scripting languages</h4>
+                    <p class="tx">Scripting languages have evolved over the past 25 years. Early scripting languages were used
+                        by putting a list of commands, called a script, in a file to be interpreted.The theoretical difference
+                        between scripting languages and programming languages we mentioned earlier is that scripting
+                        languages do not require the compilation step and are rather interpreted. For example, normally, a
+                        C program needs to be compiled before running whereas normally, a scripting language like JavaScript
+                        or PHP need not be compiled.
+                        Generally, compiled programs run faster than interpreted programs because they are first converted
+                        native machine code. Also, compilers read and analyze the code only once, and report the errors
+                        collectively that the code might have, but the interpreter will read and analyze the code statements
+                        each time it meets them and halts at that very instance if there is some error. In practice,
+                        the distinction between the two is getting blurred owing to improved computation capabilities
+                        of the modern hardware and advanced coding practices.
+                    </p>
+                    <h5>Perl</h5>
+                    <p class="tx">Perl is designed by Larry Wall in 1987. Although it is still often called a scripting language,
+                        it is actually more similar to a typical imperative language, since it is always compiled, at least into an
+                        intermediate language, before it is executed. Variables in Perl are statically typed and implicitly declared.
+                        There are three distinctive namespaces for variables, denoted by the first character of the variables’ names.
+                        Perl is a powerful, but somewhat dangerous, language. Its scalar type stores both strings and numbers, which
+                        are normally stored in double-precision floatingpoint form. Perl’s initial use was as a UNIX utility for
+                        processing text files. It was and still is widely used as a UNIX system administration tool.
+                    </p>
+                    <h5>JavaScript</h5>
+                    <p class="tx">
+                        Use of the Web exploded in the mid-1990s after the first graphical browsers appeared. The need for
+                        computation associated with HTML documents, which by themselves are completely static, quickly became
+                        critical. JavaScript was originally developed by Brendan Eich at Netscape. A language standard for
+                        JavaScript was developed in the late 1990s by the European Computer Manufacturers Association.
+                        Although a JavaScript interpreter could be embedded in many different applications, its most common
+                        use is embedded in Web browsers. JavaScript code is embedded in HTML documents and interpreted by the
+                        browser when the documents are displayed. The primary uses of JavaScript in Web programming are to validate
+                        form input data and create dynamic HTML documents. JavaScript also is now used with the Rails Web
+                        development framework and many others.
+                    </p>
+                    <h5>PHP</h5>
+                    <p>PHP was developed by Rasmus Lerdorf, a member of the Apache Group, in 1994. His initial motivation
+                        was to provide a tool to help track visitors to his personal Web site. PHP is now developed, distributed,
+                        and supported as an open-source product. PHP processors are resident on most Web servers. PHP is an
+                        HTML-embedded server-side scripting language specifically designed for Web applications. PHP code is
+                        interpreted on the Web server when an HTML document in which it is embedded has been requested by a
+                        browser. PHP code usually produces HTML code as output, which replaces the PHP code in the HTML document.
+                        Therefore, a Web browser never sees PHP code.
+                    </p>
+                    <h5>Python</h5>
+                    <p>
+                        Python is a relatively recent object-oriented interpreted scripting language. Its initial design was
+                        by Guido van Rossum at Stichting Mathematisch Centrum in the Netherlands in the early 1990s. Python’s syntax
+                        is not based directly on any commonly used language. It is type checked, but dynamically typed. Instead of
+                        arrays, Python includes three kinds of data structures: lists; immutable lists, which are called tuples;
+                        and hashes, which are called dictionaries. Python is object oriented, includes the pattern-matching
+                        capabilities of Perl, and has exception handling. Garbage collection is used to reclaim objects when
+                        they are no longer needed.
+                    </p>
+                    <h5>Ruby</h5>
+                    <p>Ruby was designed by Yukihiro Matsumoto (aka Matz) in the early 1990s and released in 1996. Since then
+                        it has continually evolved. The motivation for Ruby was dissatisfaction of its designer with Perl and
+                        Python. Although both Perl and Python support object-oriented programming,14 neither is a pure
+                        object-oriented language, at least in the sense that each has primitive (nonobject) types and each
+                        supports functions. Both classes and objects in Ruby are dynamic in the sense that methods can be
+                        dynamically added to either. This means that both classes and objects can have different sets of
+                        methods at different times during execution. The syntax of Ruby is related to that of Eiffel and Ada.
+                        There is no need to declare variables, because dynamic typing is used.
+                    </p>
+                    <h5> C#</h5>
+                    <p class="tx">
+                        C#, along with the new development platform .NET,16 was announced by Microsoft in 2000. In January 2002,
+                        production versions of both were released. C# is based on C++ and Java but includes some ideas from
+                        Delphi and Visual BASIC. The purpose of C# is to provide a language for component-based software
+                        development, specifically for such development in the .NET Framework. In this environment, components
+                        from a variety of languages can be easily combined to form systems. C# was meant to be an improvement
+                        over both C++ and Java as a generalpurpose programming language. It Includes pointers, delegates, properties,
+                        enumeration types, a limited kind of dynamic typing, and anonymous types. Although it can be argued that
+                        some of its features are a step backward, C# clearly includes some constructs that move it beyond its
+                        predecessors.
+                    </p>
+                    <br>
+                    <hr>
+                    <h1 id="blog2">How to implement merge sort</h1>
+                    <br>
+                    <h4 id="what_is">What is merge sort?</h4>
+                    <p class="tx">
+                        &emsp;Merge sort algorithm is a Sorting technique invented bz John vpn Neumann in 1945. It is one of many
+                        Divide and Conquer algorithms, which means that it is based on multi-branched recursion. A divide-and-conquer
+                        algorithm works by recursively breaking down a problem into two or more sub-problems of the same or related
+                        type, until these become simple enough to be solved directly.In most of its implementations it produce a
+                        stable sort, which means that the order of equal elements is the same in the input and output.
+                        So, how does it all works?
+                    <br>
+                    <h4 id="algorithm">Algorithm</h4>
+                    <p class="tx">
+                        Perhaps, we have an array and we have to sort it using an merge sort algorithm.
+                        Because we're using divide-and-conquer kind of algorithm to sort, we need to
+                        decide what our subproblems are going to look like. The problem is to sort an array,
+                        and, we can say that subproblem will be to sort a subarray that starts at index p, and
+                        end at index r. Let's see some kind of overview of how merge sort uses the divide and
+                        conquer:
+                    </p>
+                    <ol class="tx">
+                        <li>Divide by finding the number q of the position midway between p and r. Do this
+                            step the same way we found the midpoint in binary search: add p and r,
+                            divide by 2, and round down.</li>
+                        <li>Conquer by recursively sorting the subarrays in each of the two subproblems
+                            created by the divide step. That is, recursively sort the subarray starting at index
+                            p and ending at index q, and recursively sort the subarray srarting at index q+1 and ending at r.</li>
+                        <li>Combine by merging the two sorted subarrays back into the single
+                            sorted subarray that starts at index p and ends at r</li>
+                    </ol>
+                    <div class="col-sm-6 media">
+                        <img id="divide" src="divide.png" alt="divide">
+                        <p class="media tx">Splitting the array in a merge sort</p>
+                    </div>
+                    <div class="col-sm-6 media">
+                        <img id="merge" src="merge.png" alt="merge">
+                        <p class="media tx">Merging recursively sorted subarrays together</p>
+                    </div>
+                    <br>
+                    <h4 id="implementation">Implementation</h4>
+                    <p class="tx">Given below is an implementation of merge sort technique using C++</p>
+                    <br>
+                    <pre>
+    class MergeSort  {
+        void merge(int arr[], int beg, int mid, int end)  {
+            int left = mid - beg + 1;
+            int right = end - mid;
+
+            int Left_arr[] = new int [left];
+            int Right_arr[] = new int [right];
+
+            for (int i=0; i&lt;left; ++i)
+            Left_arr[i] = arr[beg + i];
+
+            for (int j=0; j&lt;right; ++j)
+            Right_arr[j] = arr[mid + 1+ j];
+
+            int i = 0, j = 0;
+            int k = beg;
+            while (i&lt;left&&j&lt;right){
+                if (Left_arr[i] <= Right_arr[j])  {
+                    arr[k] = Left_arr[i];
+                    i++;
+                }
+                else{
+                    arr[k] = Right_arr[j];
+                    j++;
+                }
+                k++;
+            }
+            while (i&lt;left)  {
+                arr[k] = Left_arr[i];
+                i++; k++;
+            }
+            while (j&lt;right){
+                arr[k] = Right_arr[j];
+                j++;k++;
+            }
+        }
+
+        void merge_sort(int arr[], int beg, int end)  {
+            if (beg&lt;end)  {
+                int mid = (beg+end)/2;
+                merge_sort(arr, beg, mid);
+                merge_sort(arr , mid+1, end);
+                merge(arr, beg, mid, end);
+            }
+        }
+        }
+        class Main{
+            public static void main(String args[])
+            {
+                int arr[] = {101,10,2,43,12,54,34,64,89,76};
+                System.out.println("\nInput Array");
+                for(int i =0; i&lt;arr.length;i++)
+                {
+                     System.out.print(arr[i]+" ");
+                }
+                MergeSort ob = new MergeSort();
+                ob.merge_sort(arr, 0, arr.length-1);
+
+                System.out.println("\nArray sorted using merge sort");
+                for(int i =0; i&lt;arr.length;i++)
+                {
+                    System.out.print(arr[i]+" ");
+                }
+            }
+        }
+                    </pre>
+                    <br>
+                    <h4 id="complexity">Time complexity</h4>
+                    <p class="tx">
+                        Many sorting algorithms that we would inturitively use, such as Selection Sort and Insertion Sort,
+                        both of which have a worst-case running time of O(n2). As the size of input grows, insertion and
+                        selection sort can take a long time to run. Merge sort, on the other hand, runs in O(n*log n) time
+                        in all the cases (worst, average and best).<br>
+                    </p>
+                    <br>
+                    <div class="col-sm-6 media">
+                        <img src="time_complexity.png" id="time-complexity" alt="time-complexity">
+                    </div>
+                    <div class="col-sm-6 tx">
+                        <p class="tx">
+                            As we can see from previous picture, equation of recursion of merge sort algorithm can be written as:<br>
+                            <b>&emsp; T(n) = 2*T(n/2) + &theta;(n)</b><br>
+                            We get time 2*T(n/2), because in every iteration, for problem of size n, we divide it into two subproblems of
+                            size n/2 and revursively call the function.
+                            Time &theta;(n), we get as mergeing sorted subarrays take linear time. By solving this reccursion we get time of
+                            n*log<sub>2</sub>n;
+                        </p>
+                    </div>
+
+
+
+                </div>
+                <div class="col-sm-2 sidenav">
+
+                </div>
+            </div>
+        </div>
+
+        <footer class="container-fluid text-center">
+            <div class="row content">
+                <div class="col-sm-6 contact">
+                    <h4><b>Contact info:</b></h4>
+                    <p> <i class="fa fa-linkedin-square"></i> &nbsp; LinkedIn: <a href="https://www.linkedin.com/in/elma-tur%C4%8Dinovi%C4%87-ba8164157/">linkedin.com/in/elma-turčinović-
+                        ba8164157/</a></p>
+                    <p> <i class="fa fa-facebook"> </i> &nbsp; Facebook: <a href="https://www.facebook.com/elma.turcinovic/">facebook.com/elma.turcinovic/</a></p>
+                    <p> <i class="fa fa-instagram"></i> &nbsp; Instagram: <a href="https://www.instagram.com/elmaturcinovic/">instagram.com/elmaturcinovic/</a> </p>
+                </div>
+                <div class="col-sm-6 top">
+                    <button type="button" class="btn btn-light" onclick="topFunction()" id="myBtn" title="Go to top">Go to top</button>
+                </div>
+            </div>
+        </footer>
+
+        <script>
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
+        </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+
+.tx{
+    text-align: left;
+}
+.main{
+    text-align: left;
+}
+.main h5, .main h4{
+    text-align: left;
+    font-weight: bold;
+    margin-left: 15px;
+}
+.col-sm-6.tx {
+    padding: 20px;
+}
+
+#prog_lan, #divide, #merge, #time-complexity{
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+}
+.media{
+    text-align: center;
+}
+.col-sm-6.media{
+    text-align: center;
+}
+.vertical1{
+    height: fit-content;
+    font-weight: normal;
+}

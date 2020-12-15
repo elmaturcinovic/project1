@@ -1,0 +1,43 @@
+.pr{
+    text-align: left;
+}
+.tx{
+    margin: 10px;
+    font-size: 16px;
+}
+table, tr, td, th{
+    width: auto;
+    border: solid #101010 1px;
+    border-collapse: collapse;
+    background-color: #f3deca;
+    padding: 3px;
+}
+.tema{
+    padding: 10px;
+    width: 100%;
+}
+.gr, .points{
+    padding: 10px;
+}
+.diet{
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+#graph{
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 400px;
+}
+#funkcije{
+    max-width: 1000px;
+}
+@media screen and (max-width: 767px) {
+    .tx{
+    font-size: 13px;
+}
+    .sidenav {
+        height: auto;
+        padding: 15px;
+    }
+}
